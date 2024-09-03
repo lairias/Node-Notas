@@ -1,5 +1,5 @@
 const express =require('express');
-const Notes  = require('../DATA');
+const Notes  = require('./DATA');
  class Servidor {
    
   constructor() {
