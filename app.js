@@ -55,11 +55,9 @@ const Notes  = require('./DATA');
       
      return response.json({data})
     })
-    this.app.use((resquest,respons,next)=>{
-       respons.status(404).json(
-        {error:'Not found'}
-       )
-       next()
+    this.app.use((resquest,response,next)=>{
+      const data = Notes;
+     return response.json(data)
     })
   }
   
